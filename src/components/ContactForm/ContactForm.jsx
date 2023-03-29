@@ -11,7 +11,7 @@ function ContactForm({onSubmit}) {
 
     const handleChangeName = e => {
         setName(e.currentTarget.value);
-        setNumber( e.currentTarget.value );
+        
     };
 
     const handleChangeNumber = e => { 
