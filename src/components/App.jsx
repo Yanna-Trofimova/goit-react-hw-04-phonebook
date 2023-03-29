@@ -21,18 +21,6 @@ export function App() {
   }, [contacts]);
   
 
-  useEffect(() => {
-     const contacts = window.localStorage.getItem('contacts');
-    const parselContacts = JSON.parse(contacts);
-
-    if (parselContacts) {
-      setContacts(parselContacts);
-    }
-
-    
-  },[]);
-  
-
 
   const addContact = ( name, number )  => {
     // console.log(name);
